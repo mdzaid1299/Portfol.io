@@ -20,4 +20,4 @@ Contact Me
 
 Thank you for visiting my portfolio website!
 
-*Disclaimer* - Feel free to use this template will love to de your design linkedin me email me your thaughts, experiance, suggestions and improvement areas you can also create a pull request.
+*Disclaimer* - Feel free to use this template will love to see your design. linkedin me or email me your thaughts, experiance, suggestions and improvement areas you can also create a pull request.
