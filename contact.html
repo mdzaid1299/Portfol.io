@@ -55,22 +55,31 @@
           </div>
           
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-               <form action="" class="reveal-content">
+            <div class="col-md-10 col-md-offset-1"  data-aos="fade-up">
+               <form action="https://formspree.io/f/mjvdyqrn" method="post" class="reveal-content" id="contact-form" name="contact" >
                   <div class="row">
                     <div class="col-md-7">
                       <div class="form-group">
-                        <h3><input type="text" class="form-control" id="subject" placeholder="Name" required></h3>
+                        <h3><input type="text" name="Name" class="form-control" id="subject" placeholder="Name" required></h3>
                       </div>
                       <div class="form-group">
-                        <h3><input type="email" class="form-control" id="email" placeholder="Email" required></h3>
+                        <h3><input type="email" name="Email" class="form-control" id="email" placeholder="Email" required></h3>
                       </div>
                      
                       <div class="form-group">
-                        <h3><textarea class="form-control" rows="5" placeholder="Enter your message" required></textarea></h3>
+                        <h3><textarea class="form-control" rows="5" id="message" name="message" placeholder="Enter your message" required></textarea></h3>
                       </div>
-                      <button type="submit" class="btn btn-default btn-lg">Send</button>
+                      <button type="submit"  class="btn btn-default btn-lg">Send</button>
                     </div>
+                    <!-- <div class="alert alert-success" role="alert">Your message was successfully sent</div>
+                    <div class="alert alert-danger" role="alert">Your message has not been sent, restart</div> -->
+                    <div id="success">
+                      <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
+                  </div>
+                  <div id="error">
+                      <p> Something went wrong, try refreshing and submitting the form again. </p>
+                  </div>
+                   </form>
                     <div class="col-md-5 address-container">
                       <ul class="list-unstyled">
                         <!-- <li>
@@ -105,7 +114,7 @@
 
                     </div>
                   </div>
-                </form>
+               
             </div>
 
           </div>
@@ -146,5 +155,40 @@
 </script>
 
 --> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyBJxQvm2xfGneAo0G6TnCGxs2WfoRtaO-E",
+  //   authDomain: "portfolio-7fe82.firebaseapp.com",
+  //   projectId: "portfolio-7fe82",
+  //   storageBucket: "portfolio-7fe82.appspot.com",
+  //   messagingSenderId: "932476339876",
+  //   appId: "1:932476339876:web:48d6e6c070a330f1864831"
+  // };
+
+  // // Initialize Firebase
+  // firebase.initializeApp(firebaseConfig);
+  // const submitForm = async () => {
+  //           const userName = document.querySelector('#subject').value;
+  //           const userEmail = document.querySelector('#email').value;
+  //           const userMessage = document.querySelector("#message").value;
+  //           try {
+  //               const db = firebase.firestore();
+  //               await db.collection("users").add({
+  //                   name: userName,
+  //                   email: userEmail,
+  //                   message: userMessage
+  //               });
+  //               alert("Form Submitted !!!!")
+  //           } catch (error) {
+  //               console.log(error);
+  //           }
+  //       }
+    
+</script>
 </html>
